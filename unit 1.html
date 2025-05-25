@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CPU Quiz</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f4f4f4; }
+    h2 { color: #333; }
+    .question { margin-bottom: 20px; padding: 10px; background: #fff; border-radius: 5px; }
+    .result { font-weight: bold; font-size: 18px; margin-top: 20px; }
+    button { padding: 10px 20px; font-size: 16px; margin-top: 10px; }
+
+    label.correct {
+      background-color: #d4edda;
+      color: #155724;
+      font-weight: bold;
+      border-radius: 3px;
+      padding: 4px;
+      display: inline-block;
+    }
+    label.incorrect {
+      background-color: #f8d7da;
+      color: #721c24;
+      font-weight: bold;
+      border-radius: 3px;
+      padding: 4px;
+      display: inline-block;
+    }
+
+  </style>
+</head>
+<body>
+
+<h2>CPU Quiz</h2>
+
+<form id="quizForm">
+  <div class="question">
+    <p>1. What do address lines do in a CPU?</p>
+    <label><input type="radio" name="q1" value="c"> Identify memory locations</label><br>
+    <label><input type="radio" name="q1" value="a"> Execute instructions</label><br>
+    <label><input type="radio" name="q1" value="b"> Store data temporarily</label>
+  </div>
+
+  <div class="question">
+    <p>2. Internal registers like the accumulator and program counter are located:</p>
+    <label><input type="radio" name="q2" value="c"> Inside the CPU</label><br>
+    <label><input type="radio" name="q2" value="a"> On the motherboard</label><br>
+    <label><input type="radio" name="q2" value="b"> In the RAM</label>
+  </div>
+
+  <div class="question">
+    <p>3. Which CPU mode allows direct access to all memory but no protection features?</p>
+    <label><input type="radio" name="q3" value="b"> Real Mode</label><br>
+    <label><input type="radio" name="q3" value="a"> IA-32</label><br>
+    <label><input type="radio" name="q3" value="c"> IA-32e</label>
+  </div>
+
+  <div class="question">
+    <p>4. IA-32e is a 64-bit extension of IA-32.</p>
+    <label><input type="radio" name="q4" value="true"> True</label><br>
+    <label><input type="radio" name="q4" value="false"> False</label>
+  </div>
+
+  <div class="question">
+    <p>5. What does the term "7nm process" refer to?</p>
+    <label><input type="radio" name="q5" value="c"> Transistor manufacturing size</label><br>
+    <label><input type="radio" name="q5" value="a"> Cache size</label><br>
+    <label><input type="radio" name="q5" value="b"> Core speed</label>
+  </div>
+
+  <div class="question">
+    <p>6. Hyper-Threading allows:</p>
+    <label><input type="radio" name="q6" value="b"> A single core to process multiple threads</label><br>
+    <label><input type="radio" name="q6" value="a"> More RAM usage</label><br>
+    <label><input type="radio" name="q6" value="c"> Faster GPU access</label>
+  </div>
+
+  <div class="question">
+    <p>7. Which of these is a modern CPU interface?</p>
+    <label><input type="radio" name="q7" value="b"> LGA</label><br>
+    <label><input type="radio" name="q7" value="a"> Slot 1</label><br>
+    <label><input type="radio" name="q7" value="c"> AGP</label>
+  </div>
+
+  <div class="question">
+    <p>8. Slots were mainly used for CPUs in:</p>
+    <label><input type="radio" name="q8" value="b"> Old desktop systems</label><br>
+    <label><input type="radio" name="q8" value="a"> Tablets</label><br>
+    <label><input type="radio" name="q8" value="c"> Mobile phones</label>
+  </div>
+
+  <div class="question">
+    <p>9. What component connects the CPU to the RAM and GPU?</p>
+    <label><input type="radio" name="q9" value="c"> Northbridge</label><br>
+    <label><input type="radio" name="q9" value="a"> Southbridge</label><br>
+    <label><input type="radio" name="q9" value="b"> BIOS</label>
+  </div>
+
+  <div class="question">
+    <p>10. The hub architecture integrates northbridge and southbridge functions.</p>
+    <label><input type="radio" name="q10" value="true"> True</label><br>
+    <label><input type="radio" name="q10" value="false"> False</label>
+  </div>
+
+  <div class="question">
+    <p>11. Which bus has largely replaced PCI and AGP for high-speed peripherals?</p>
+    <label><input type="radio" name="q11" value="b"> PCIe</label><br>
+    <label><input type="radio" name="q11" value="a"> PCI-X</label><br>
+    <label><input type="radio" name="q11" value="c"> SDRAM</label>
+  </div>
+
+  <div class="question">
+    <p>12. AGP was primarily used for:</p>
+    <label><input type="radio" name="q12" value="c"> Video cards</label><br>
+    <label><input type="radio" name="q12" value="a"> Network cards</label><br>
+    <label><input type="radio" name="q12" value="b"> Sound cards</label>
+  </div>
+
+  <div class="question">
+    <p>13. What is the memory called above the first 1MB?</p>
+    <label><input type="radio" name="q13" value="c"> Extended</label><br>
+    <label><input type="radio" name="q13" value="a"> Conventional</label><br>
+    <label><input type="radio" name="q13" value="b"> Expanded</label>
+  </div>
+
+  <div class="question">
+    <p>14. EMS used paging techniques to allow DOS access to more memory.</p>
+    <label><input type="radio" name="q14" value="true"> True</label><br>
+    <label><input type="radio" name="q14" value="false"> False</label>
+  </div>
+
+  <div class="question">
+    <p>15. Which RAM type is synchronized with the system clock?</p>
+    <label><input type="radio" name="q15" value="b"> SDRAM</label><br>
+    <label><input type="radio" name="q15" value="a"> DDR</label><br>
+    <label><input type="radio" name="q15" value="c"> ROM</label>
+  </div>
+
+  <div class="question">
+    <p>16. DDR3 RAM has:</p>
+    <label><input type="radio" name="q16" value="c"> Improved speed and lower power use than DDR2</label><br>
+    <label><input type="radio" name="q16" value="a"> Slower speeds than DDR2</label><br>
+    <label><input type="radio" name="q16" value="b"> Higher voltage than DDR2</label>
+  </div>
+
+  <div class="question">
+    <p>17. Which level of cache is typically shared across CPU cores?</p>
+    <label><input type="radio" name="q17" value="c"> L3</label><br>
+    <label><input type="radio" name="q17" value="a"> L1</label><br>
+    <label><input type="radio" name="q17" value="b"> L2</label>
+  </div>
+
+  <div class="question">
+    <p>18. What is a “cache miss”?</p>
+    <label><input type="radio" name="q18" value="b"> Data is not in cache, fetched from main memory</label><br>
+    <label><input type="radio" name="q18" value="a"> CPU skips instructions</label><br>
+    <label><input type="radio" name="q18" value="c"> Cache is full</label>
+  </div>
+
+  <div class="question">
+    <p>19. BIOS is responsible for:</p>
+    <label><input type="radio" name="q19" value="b"> Initializing hardware at startup</label><br>
+    <label><input type="radio" name="q19" value="a"> Installing software</label><br>
+    <label><input type="radio" name="q19" value="c"> Saving user data</label>
+  </div>
+
+  <div class="question">
+    <p>20. CMOS stores:</p>
+    <label><input type="radio" name="q20" value="c"> BIOS settings</label><br>
+    <label><input type="radio" name="q20" value="a"> RAM contents</label><br>
+    <label><input type="radio" name="q20" value="b"> Operating system</label>
+  </div>
+
+  <div class="question">
+    <p>21. When selecting a motherboard, you should consider:</p>
+    <label><input type="radio" name="q21" value="c"> CPU and RAM compatibility</label><br>
+    <label><input type="radio" name="q21" value="a"> Monitor size</label><br>
+    <label><input type="radio" name="q21" value="b"> USB port color</label>
+  </div>
+
+  <div class="question">
+    <p>22. The number of power phases can affect motherboard stability and performance.</p>
+    <label><input type="radio" name="q22" value="true"> True</label><br>
+    <label><input type="radio" name="q22" value="false"> False</label>
+  </div>
+
+  <button type="button" onclick="checkAnswers()">Submit</button>
+</form>
+
+<div class="result" id="result"></div>
+
+<script>
+  function checkAnswers() {
+    const answers = {
+      q1: 'c',
+      q2: 'c',
+      q3: 'b',
+      q4: 'true',
+      q5: 'c',
+      q6: 'b',
+      q7: 'b',
+      q8: 'b',
+      q9: 'c',
+      q10: 'true',
+      q11: 'b',
+      q12: 'c',
+      q13: 'c',
+      q14: 'true',
+      q15: 'b',
+      q16: 'c',
+      q17: 'c',
+      q18: 'b',
+      q19: 'b',
+      q20: 'c',
+      q21: 'c',
+      q22: 'true'
+    };
+    
+    const form = document.getElementById('quizForm');
+    const resultDiv = document.getElementById('result');
+
+    let score = 0;
+    let total = Object.keys(answers).length;
+
+    // Clear previous highlights
+    document.querySelectorAll('label').forEach(label => {
+      label.classList.remove('correct', 'incorrect');
+    });
+
+    // Check each question
+    for (const [q, ans] of Object.entries(answers)) {
+      const selectedInput = form.querySelector(`input[name="${q}"]:checked`);
+      const inputs = form.querySelectorAll(`input[name="${q}"]`);
+
+      inputs.forEach(input => {
+        if (input.value === ans) {
+          input.parentElement.classList.add('correct');
+        }
+        if (input.checked && input.value !== ans) {
+          input.parentElement.classList.add('incorrect');
+        }
+      });
+
+      if (selectedInput && selectedInput.value === ans) {
+        score++;
+      }
+    }
+
+    resultDiv.textContent = `You scored ${score} out of ${total}.`;
+  }
+</script>
+
+</body>
+</html>

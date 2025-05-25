@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Computer Storage Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    h1 {
+      color: #222;
+    }
+    .question {
+      margin-bottom: 20px;
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    .question label {
+      display: block;
+      margin: 8px 0;
+      padding: 5px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    /* Default background for labels */
+    .question label.correct {
+      background-color: #d4edda; /* green background */
+      color: #155724;
+      font-weight: bold;
+    }
+    .question label.wrong {
+      background-color: #f8d7da; /* red background */
+      color: #721c24;
+      font-weight: bold;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .result {
+      font-weight: bold;
+      color: blue;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Computer Storage Quiz</h1>
+
+  <form id="quizForm">
+    <!-- 1 -->
+    <div class="question">
+      <h2>1. Which recording technique stores bits vertically for higher density?</h2>
+      <label><input type="radio" name="q1" value="A" /> FM</label>
+      <label><input type="radio" name="q1" value="B" /> MFM</label>
+      <label><input type="radio" name="q1" value="C" /> RLL</label>
+      <label><input type="radio" name="q1" value="D" /> Perpendicular Recording</label>
+    </div>
+
+    <!-- 2 -->
+    <div class="question">
+      <h2>2. What component rotates the platters in a hard disk?</h2>
+      <label><input type="radio" name="q2" value="A" /> Head Slider</label>
+      <label><input type="radio" name="q2" value="B" /> Actuator Arm</label>
+      <label><input type="radio" name="q2" value="C" /> Spindle Motor</label>
+      <label><input type="radio" name="q2" value="D" /> Read/Write Head</label>
+    </div>
+
+    <!-- 3 -->
+    <div class="question">
+      <h2>3. What is a sector in a hard disk?</h2>
+      <label><input type="radio" name="q3" value="A" /> Group of tracks</label>
+      <label><input type="radio" name="q3" value="B" /> Subdivision of a track</label>
+      <label><input type="radio" name="q3" value="C" /> Group of sectors</label>
+      <label><input type="radio" name="q3" value="D" /> Parking area for head</label>
+    </div>
+
+    <!-- 4 -->
+    <div class="question">
+      <h2>4. What does low-level formatting define?</h2>
+      <label><input type="radio" name="q4" value="A" /> File system type</label>
+      <label><input type="radio" name="q4" value="B" /> Disk partitions</label>
+      <label><input type="radio" name="q4" value="C" /> Tracks and sectors</label>
+      <label><input type="radio" name="q4" value="D" /> OS installation</label>
+    </div>
+
+    <!-- 5 -->
+    <div class="question">
+      <h2>5. Which file system supports encryption and journaling?</h2>
+      <label><input type="radio" name="q5" value="A" /> FAT16</label>
+      <label><input type="radio" name="q5" value="B" /> FAT32</label>
+      <label><input type="radio" name="q5" value="C" /> NTFS</label>
+      <label><input type="radio" name="q5" value="D" /> MBR</label>
+    </div>
+
+    <!-- 6 -->
+    <div class="question">
+      <h2>6. Which hard disk interface uses thinner cables and point-to-point connection?</h2>
+      <label><input type="radio" name="q6" value="A" /> IDE</label>
+      <label><input type="radio" name="q6" value="B" /> SCSI</label>
+      <label><input type="radio" name="q6" value="C" /> PATA</label>
+      <label><input type="radio" name="q6" value="D" /> SATA</label>
+    </div>
+
+    <!-- 7 -->
+    <div class="question">
+      <h2>7. In a CD-ROM, data is stored as what?</h2>
+      <label><input type="radio" name="q7" value="A" /> Tracks and sectors</label>
+      <label><input type="radio" name="q7" value="B" /> Pits and lands</label>
+      <label><input type="radio" name="q7" value="C" /> Magnetic charges</label>
+      <label><input type="radio" name="q7" value="D" /> Clusters</label>
+    </div>
+
+    <!-- 8 -->
+    <div class="question">
+      <h2>8. What laser wavelength does Blu-ray use?</h2>
+      <label><input type="radio" name="q8" value="A" /> Red (650 nm)</label>
+      <label><input type="radio" name="q8" value="B" /> Infrared (780 nm)</label>
+      <label><input type="radio" name="q8" value="C" /> Blue-violet (405 nm)</label>
+      <label><input type="radio" name="q8" value="D" /> Green (532 nm)</label>
+    </div>
+
+    <!-- 9 -->
+    <div class="question">
+      <h2>9. What is the Master Boot Record (MBR)?</h2>
+      <label><input type="radio" name="q9" value="A" /> A type of file system</label>
+      <label><input type="radio" name="q9" value="B" /> First sector of disk holding boot loader and partition table</label>
+      <label><input type="radio" name="q9" value="C" /> The BIOS</label>
+      <label><input type="radio" name="q9" value="D" /> Disk formatting tool</label>
+    </div>
+
+    <!-- 10 -->
+    <div class="question">
+      <h2>10. Which recording technique reduces clock signals for better efficiency?</h2>
+      <label><input type="radio" name="q10" value="A" /> FM</label>
+      <label><input type="radio" name="q10" value="B" /> MFM</label>
+      <label><input type="radio" name="q10" value="C" /> RLL</label>
+      <label><input type="radio" name="q10" value="D" /> ZBR</label>
+    </div>
+
+    <!-- 11 -->
+    <div class="question">
+      <h2>11. What is a cluster in storage?</h2>
+      <label><input type="radio" name="q11" value="A" /> A group of sectors</label>
+      <label><input type="radio" name="q11" value="B" /> A single track</label>
+      <label><input type="radio" name="q11" value="C" /> A group of cylinders</label>
+      <label><input type="radio" name="q11" value="D" /> Parking area for head</label>
+    </div>
+
+    <!-- 12 -->
+    <div class="question">
+      <h2>12. What does Zone Bit Recording (ZBR) do?</h2>
+      <label><input type="radio" name="q12" value="A" /> Increases sectors on outer tracks</label>
+      <label><input type="radio" name="q12" value="B" /> Decreases sectors on outer tracks</label>
+      <label><input type="radio" name="q12" value="C" /> Adjusts write signal timing</label>
+      <label><input type="radio" name="q12" value="D" /> Organizes boot loader</label>
+    </div>
+
+    <!-- 13 -->
+    <div class="question">
+      <h2>13. What does the actuator arm do?</h2>
+      <label><input type="radio" name="q13" value="A" /> Reads data</label>
+      <label><input type="radio" name="q13" value="B" /> Moves read/write head across platters</label>
+      <label><input type="radio" name="q13" value="C" /> Rotates platters</label>
+      <label><input type="radio" name="q13" value="D" /> Controls spindle motor</label>
+    </div>
+
+    <!-- 14 -->
+    <div class="question">
+      <h2>14. Which of these is NOT a hard disk interface?</h2>
+      <label><input type="radio" name="q14" value="A" /> IDE</label>
+      <label><input type="radio" name="q14" value="B" /> SATA</label>
+      <label><input type="radio" name="q14" value="C" /> USB</label>
+      <label><input type="radio" name="q14" value="D" /> SCSI</label>
+    </div>
+
+    <!-- 15 -->
+    <div class="question">
+      <h2>15. What kind of media does DVD use?</h2>
+      <label><input type="radio" name="q15" value="A" /> Magnetic disks</label>
+      <label><input type="radio" name="q15" value="B" /> Optical disks with pits and lands</label>
+      <label><input type="radio" name="q15" value="C" /> Flash memory</label>
+      <label><input type="radio" name="q15" value="D" /> Solid state</label>
+    </div>
+
+    <button type="button" onclick="submitQuiz()">Submit</button>
+  </form>
+
+  <div id="result" class="result"></div>
+
+  <script>
+    const answers = {
+      q1: "D",
+      q2: "C",
+      q3: "B",
+      q4: "C",
+      q5: "C",
+      q6: "D",
+      q7: "B",
+      q8: "C",
+      q9: "B",
+      q10: "C",
+      q11: "A",
+      q12: "A",
+      q13: "B",
+      q14: "C",
+      q15: "B"
+    };
+
+    function submitQuiz() {
+      let score = 0;
+      const total = Object.keys(answers).length;
+
+      // Remove any previous coloring
+      const allLabels = document.querySelectorAll('label');
+      allLabels.forEach(label => {
+        label.classList.remove('correct', 'wrong');
+      });
+
+      for (let q in answers) {
+        const selected = document.querySelector(`input[name="${q}"]:checked`);
+        if (!selected) continue;
+
+        const correctAnswer = answers[q];
+        const labels = document.querySelectorAll(`input[name="${q}"]`);
+        
+        // Highlight the correct answer label green
+        labels.forEach(input => {
+          const label = input.parentElement;
+          if (input.value === correctAnswer) {
+            label.classList.add('correct');
+          }
+        });
+
+        // Highlight user's wrong selection red
+        if (selected.value === correctAnswer) {
+          score++;
+        } else {
+          const wrongLabel = selected.parentElement;
+          wrongLabel.classList.add('wrong');
+        }
+      }
+
+      document.getElementById('result').textContent = `You scored ${score} out of ${total}`;
+      
+      // Disable all inputs after submission
+      const allInputs = document.querySelectorAll('input[type="radio"]');
+      allInputs.forEach(input => input.disabled = true);
+      // Disable submit button
+      document.querySelector('button').disabled = true;
+    }
+  </script>
+</body>
+</html>
