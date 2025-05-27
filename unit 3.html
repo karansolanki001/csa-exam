@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Display Technologies Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f0f0f0;
+    }
+    h2 {
+      color: #333;
+    }
+    .question {
+      margin-bottom: 15px;
+      background: white;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 5px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+    .result {
+      margin-top: 30px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Display Technologies Quiz</h1>
+<form id="quizForm">
+
+  <h2>Section A: Multiple Choice</h2>
+  <div class="question">1. What component in a CRT monitor controls the intensity of the electron beam?<br>
+    <input type="radio" name="q1" value="a"> a) Focusing Anode<br>
+    <input type="radio" name="q1" value="b"> b) Control Grid<br>
+    <input type="radio" name="q1" value="c"> c) Accelerating Anode<br>
+    <input type="radio" name="q1" value="d"> d) Shadow Mask<br>
+  </div>
+
+  <div class="question">2. In a color CRT monitor, how many electron guns are used?<br>
+    <input type="radio" name="q2" value="a"> a) One<br>
+    <input type="radio" name="q2" value="b"> b) Two<br>
+    <input type="radio" name="q2" value="c"> c) Three<br>
+    <input type="radio" name="q2" value="d"> d) Four<br>
+  </div>
+
+  <div class="question">3. What is the primary function of a shadow mask in a color CRT?<br>
+    <input type="radio" name="q3" value="a"> a) Focus the beam<br>
+    <input type="radio" name="q3" value="b"> b) Accelerate the beam<br>
+    <input type="radio" name="q3" value="c"> c) Guide electron beams to correct phosphors<br>
+    <input type="radio" name="q3" value="d"> d) Display the final image<br>
+  </div>
+
+  <div class="question">4. What does "dot pitch" determine in a CRT monitor?<br>
+    <input type="radio" name="q4" value="a"> a) Screen size<br>
+    <input type="radio" name="q4" value="b"> b) Color depth<br>
+    <input type="radio" name="q4" value="c"> c) Image sharpness<br>
+    <input type="radio" name="q4" value="d"> d) Power consumption<br>
+  </div>
+
+  <div class="question">5. Which type of scanning provides a more stable image in CRTs?<br>
+    <input type="radio" name="q5" value="a"> a) Interlaced scanning<br>
+    <input type="radio" name="q5" value="b"> b) Reverse scanning<br>
+    <input type="radio" name="q5" value="c"> c) Non-interlaced scanning<br>
+    <input type="radio" name="q5" value="d"> d) Horizontal scanning<br>
+  </div>
+
+  <div class="question">6. What is a major advantage of Active Matrix LCD over Passive Matrix LCD?<br>
+    <input type="radio" name="q6" value="a"> a) Less expensive<br>
+    <input type="radio" name="q6" value="b"> b) Requires no backlight<br>
+    <input type="radio" name="q6" value="c"> c) Faster response and better image quality<br>
+    <input type="radio" name="q6" value="d"> d) Higher power consumption<br>
+  </div>
+
+  <div class="question">7. Which technology is most likely used in a capacitive touch screen?<br>
+    <input type="radio" name="q7" value="a"> a) Pressure sensitivity<br>
+    <input type="radio" name="q7" value="b"> b) Infrared beams<br>
+    <input type="radio" name="q7" value="c"> c) Conductive coating and capacitance<br>
+    <input type="radio" name="q7" value="d"> d) Acoustic waves<br>
+  </div>
+
+  <div class="question">8. Plasma displays work by emitting which type of light to activate phosphors?<br>
+    <input type="radio" name="q8" value="a"> a) Infrared<br>
+    <input type="radio" name="q8" value="b"> b) Visible<br>
+    <input type="radio" name="q8" value="c"> c) Ultraviolet<br>
+    <input type="radio" name="q8" value="d"> d) X-ray<br>
+  </div>
+
+  <h2>Section B: True/False</h2>
+  <div class="question">9. Monochrome CRT monitors use multiple electron guns.<br>
+    <input type="radio" name="q9" value="true"> True
+    <input type="radio" name="q9" value="false"> False<br>
+  </div>
+
+  <div class="question">10. In LCDs, the liquid crystals control the amount of light passing through.<br>
+    <input type="radio" name="q10" value="true"> True
+    <input type="radio" name="q10" value="false"> False<br>
+  </div>
+
+  <div class="question">11. Plasma screens do not use phosphors for color production.<br>
+    <input type="radio" name="q11" value="true"> True
+    <input type="radio" name="q11" value="false"> False<br>
+  </div>
+
+  <div class="question">12. The video accelerator card reduces the CPU’s load by handling image rendering.<br>
+    <input type="radio" name="q12" value="true"> True
+    <input type="radio" name="q12" value="false"> False<br>
+  </div>
+
+  <div class="question">13. TFT LCDs are an example of passive matrix displays.<br>
+    <input type="radio" name="q13" value="true"> True
+    <input type="radio" name="q13" value="false"> False<br>
+  </div>
+
+  <h2>Section C: Fill in the Blanks / Short Answers</h2>
+  <div class="question">14. The ________ in a CRT monitor is used to focus the electron beam.<br>
+    <input type="text" name="q14">
+  </div>
+
+  <div class="question">15. Aspect ratio is the ratio of ________ to ________ of a display.<br>
+    <input type="text" name="q15">
+  </div>
+
+  <div class="question">16. In LCDs, light first passes through a ________ before reaching the liquid crystal layer.<br>
+    <input type="text" name="q16">
+  </div>
+
+  <div class="question">17. Name two types of touch screen technologies.<br>
+    <input type="text" name="q17">
+  </div>
+
+  <div class="question">18. What does VRAM in a video accelerator card do?<br>
+    <input type="text" name="q18">
+  </div>
+
+  <div class="question">19. Name any two output interfaces on a video accelerator card.<br>
+    <input type="text" name="q19">
+  </div>
+
+  <div class="question">20. What causes flicker in interlaced CRT scanning?<br>
+    <input type="text" name="q20">
+  </div>
+
+  <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+
+</form>
+
+<div class="result" id="result"></div>
+
+<script>
+function submitQuiz() {
+  let score = 0;
+  const answers = {
+    q1: "b", q2: "c", q3: "c", q4: "c", q5: "c", q6: "c", q7: "c", q8: "c",
+    q9: "false", q10: "true", q11: "false", q12: "true", q13: "false"
+  };
+  const textAnswers = {
+    q14: "Focusing Anode",
+    q15: "width to height",
+    q16: "polarizer",
+    q17: "resistive, capacitive",
+    q18: "stores frame buffer and textures",
+    q19: "HDMI, VGA",
+    q20: "alternating scan lines"
+  };
+
+  for (let i = 1; i <= 13; i++) {
+    const radios = document.getElementsByName(`q${i}`);
+    for (const radio of radios) {
+      if (radio.checked && radio.value.toLowerCase() === answers[`q${i}`]) {
+        score++;
+      }
+    }
+  }
+
+  for (let i = 14; i <= 20; i++) {
+    const val = document.forms["quizForm"][`q${i}`].value.toLowerCase().trim();
+    if (val.includes(textAnswers[`q${i}`].toLowerCase())) {
+      score++;
+    }
+  }
+
+  document.getElementById("result").innerText = `You scored ${score} out of 20.`;
+}
+</script>
+
+</body>
+</html>
